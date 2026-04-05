@@ -1,4 +1,4 @@
-STM32 CAN Bootloader (UDS / ISO-TP / Bare-Metal)
+STM32 CAN Bootloader (UDS / ISO-TP / Bare-Metal): Completed an embedded systems internship at FPT SOFTWARE HCM
 
 *** Overview:
   - This project implements a CAN-based firmware update system for STM32F103C8T6 using automotive communication standards.
