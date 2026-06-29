@@ -1,22 +1,21 @@
-STM32 CAN Bootloader (UDS / ISO-TP / Bare-Metal): Completed an embedded systems internship at FPT SOFTWARE HCM
+# STM32 CAN Bootloader (UDS / ISO-TP / Bare-Metal): Completed an embedded systems internship at FPT SOFTWARE HCM
 
-*** Overview:
-  - This project implements a CAN-based firmware update system for STM32F103C8T6 using automotive communication standards.
-  - The system enables firmware flashing from a PC to the target MCU over CAN bus, via a custom gateway built on Arduino Nano.
-  => Focus: Full-stack embedded development — from low-level drivers to high-level automotive protocols.
+# OVERVIEW
+<img width="1162" height="641" alt="image" src="https://github.com/user-attachments/assets/55ae311f-9330-4c1e-8891-da0f0dc09aa9" />
 
-*** System Architecture:
-        PC (Python Tool)
-              │
-           UART/USB
-              │
-        Arduino Nano (CAN Gateway)
-              │
-        MCP2515 (CAN Controller) + MCP2551 (Transceiver)
-              │
-            CAN Bus
-              │
-        STM32F103C8T6 (Bootloader + Application)
+# SOFTWARE REQUIREMENT
+<img width="1043" height="582" alt="image" src="https://github.com/user-attachments/assets/d2453378-9841-41ee-ab21-80ad0496786e" />
+
+# SOFTWARE ARCHITECTURE
+<img width="1562" height="352" alt="image" src="https://github.com/user-attachments/assets/6aa399ef-e526-41a9-9ada-702338ed2c45" />
+
+# MEMORY
+<img width="506" height="430" alt="image" src="https://github.com/user-attachments/assets/02a71930-8d7b-4b45-baf6-7456b3c22730" />
+
+# SUD
+<img width="1566" height="352" alt="image" src="https://github.com/user-attachments/assets/cdf4dc21-7415-4ecf-bb39-397b40818520" />
+
+
 
 *** Components:
     - PC Host: Python-based firmware uploader
@@ -25,7 +24,7 @@ STM32 CAN Bootloader (UDS / ISO-TP / Bare-Metal): Completed an embedded systems 
        + MCP2515 (SPI-based CAN controller)
        + MCP2551
     - Target MCU
-       + STM32F103C8T6 running custom bootloader
+       + STM32F103C8T6 running custom bootloader ***
 
 **́́ Key Features:
 - Firmware update over CAN bus
