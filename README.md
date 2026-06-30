@@ -1,6 +1,7 @@
-# STM32 CAN Bootloader (UDS / ISO-TP / Bare-Metal): Completed an embedded systems internship at FPT SOFTWARE HCM
+# STM32 CAN Bootloader (UDS / ISO-TP / Bare-Metal): Completed 
 
 # OVERVIEW
+
 <img width="1162" height="641" alt="image" src="https://github.com/user-attachments/assets/55ae311f-9330-4c1e-8891-da0f0dc09aa9" />
 
 # SOFTWARE REQUIREMENT
@@ -27,12 +28,7 @@
        + STM32F103C8T6 running custom bootloader ***
 
 **́́ Key Features:
-- Firmware update over CAN bus
-- Custom bootloader (bare-metal, register-level)
-- Automotive communication stack:
-   + ISO-TP (CAN Transport Protocol)
-   + UDS (Unified Diagnostic Services)
- - Boot control using dedicated Flash flag region
- - Flash memory management (erase / program / verify)
- - Multi-node system (PC ↔ Gateway ↔ STM32)
- - Custom low-level drivers (no HAL / no LL)
+ - Automotive Standards: Implemented UDS (ISO 14229) and ISO-TP (ISO 15765) diagnostic communication stack.
+ - Bare-metal Design: Developed low-level drivers (no HAL/LL) for direct Flash memory management (erase/program/verify) and CAN peripheral control.
+ - System Reliability: Integrated boot control using a dedicated Flash flag region and CRC verification to ensure firmware integrity.
+ - Multi-node Communication: PC-based Python tool (UDS client) orchestrates the flashing process via an Arduino-based CAN Gateway.
